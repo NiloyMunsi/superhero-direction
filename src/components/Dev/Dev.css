@@ -1,4 +1,21 @@
 .profile-pic{
     height: 200px;
     width: 200px;
+    
+}
+.developer-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.dev{
+    border: 1px solid lightseagreen;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn{
+    color: white;
+    background-color: tomato;
+    cursor: pointer;
 }
