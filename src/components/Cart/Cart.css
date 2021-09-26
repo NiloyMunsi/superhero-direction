@@ -1,3 +1,11 @@
 .cart{
     margin-left: 20px;
+    
+    color: #004b23;
+}
+.team-cart{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    color: #002855;
 }

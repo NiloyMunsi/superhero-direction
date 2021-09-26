@@ -1,4 +1,5 @@
 import React from 'react';
+import TeamMember from '../TeamMember/TeamMember';
 import './Cart.css'
 
 const Cart = (props) => {
@@ -8,10 +9,18 @@ const Cart = (props) => {
         total = total + developer.salary;
     }
     return (
-        <div className="cart">
+        <div>
+            <div className="cart">
             <h3>Added person :{props.team.length}</h3>
-            <h4>Persons:</h4>
-            <h1>total:$ { total}</h1>
+            <h1>Total:$ { total}</h1>
+        </div>
+            <div className="team-cart">
+                <h3>My Team</h3>
+                <hr />
+            {
+                team.map(developer=><TeamMember developer={developer}></TeamMember>)    
+            }
+        </div>
         </div>
     );
 };
