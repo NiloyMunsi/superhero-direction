@@ -12,8 +12,11 @@ const Developer = () => {
             .then(data => setDeveloper(data));
     }, [])
     const handleAdd = (developer) => {
-        const newTeam = [...team, developer];
-        setTeam(newTeam);
+        if (team.indexOf(developer) === -1) {
+            const newTeam = [...team, developer];
+            setTeam(newTeam);  
+        }
+        
     }
 
     return (
