@@ -20,6 +20,7 @@ const Cart = (props) => {
             {
                 team.map(developer=><TeamMember developer={developer}></TeamMember>)    
             }
+                <button className="btn">Hire Now</button>
         </div>
         </div>
     );

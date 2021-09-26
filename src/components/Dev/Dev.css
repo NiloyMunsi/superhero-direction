@@ -1,7 +1,7 @@
 .profile-pic{
     height: 200px;
     width: 200px;
-    
+    border-radius: 100%;
 }
 .developer-container{
     text-align: center;
